@@ -6,9 +6,12 @@
 }
 
 body {
+    overflow: hidden;
     background-color: black;
     margin: 0px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 button, p {
     font-family: "standard galactic", sans-serif;
@@ -20,7 +23,7 @@ button {
     border: 10px solid #B48A2E;
     border-radius: 7px;
     width: 20%;
-    height: 25%;
+    height: 30%;
 }
 .Title, .Buttons {
     background-color: #002B36;
@@ -33,7 +36,7 @@ button {
 }
 .Buttons {
     background-color: #002B36;
-    height: 100vh;
+    flex: 1;
     align-items: center;
     justify-content: space-evenly;
 }
