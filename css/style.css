@@ -1,21 +1,39 @@
-body.lightMode {
-    background-color: white;
+@font-face {
+  font-family: 'standard galactic';
+  src: url("../fonts/standard_galactic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
-body.darkMode {
+
+body {
     background-color: black;
+    margin: 0px;
+    height: 100vh;
 }
-body.lightMode button {
-    color: black;
-}
-body.darkMode button {
-    color: white;
+button, p {
+    font-family: "standard galactic", sans-serif;
+    color: #29A198;
+    font-size: clamp(1vw, 3vw, 5vw);
 }
 button {
-    background-color: darkgray;
+    background-color: #114655;
+    border: 10px solid #B48A2E;
+    border-radius: 7px;
+    width: 20%;
+    height: 25%;
 }
-.lightMode {
-    color: white;
+.Title, .Buttons {
+    background-color: #002B36;
+    display: flex;
+    justify-content: center;
 }
-.darkMode {
-    color: black;
+.Title {
+    background-color: #114655;
+    padding: 5% 0px 5% 0px;
+}
+.Buttons {
+    background-color: #002B36;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
 }
