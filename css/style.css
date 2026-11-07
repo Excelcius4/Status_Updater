@@ -1,0 +1,21 @@
+body.lightMode {
+    background-color: white;
+}
+body.darkMode {
+    background-color: black;
+}
+body.lightMode button {
+    color: black;
+}
+body.darkMode button {
+    color: white;
+}
+button {
+    background-color: darkgray;
+}
+.lightMode {
+    color: white;
+}
+.darkMode {
+    color: black;
+}
