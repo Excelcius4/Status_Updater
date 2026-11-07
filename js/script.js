@@ -1,20 +1,23 @@
-document.querySelectorAll("body", "button").forEach(el => {
-        el.classList.add("lightMode");
-        el.classList.remove("darkMode");
-    });
+function lockedInClicked() {
+    console.log("We are SOOOO locked");
+}
+function lockedOutClicked() {
+    console.log("We are SOOOO not locked");
+}
+function sleepingClicked() {
+    console.log("We are def sleeping rn");
+}
+function eatingClicked() {
+    console.log("We are noming AND choming");
+}
 
-const testerButton = document.querySelector("#testerButton");
+const lockedInButton = document.querySelector("#locked_in");
+const lockedOutButton = document.querySelector("#locked_out");
+const sleepingButton = document.querySelector("#sleeping");
+const eatingButton = document.querySelector("#eating");
 
-testerButton.addEventListener("click", function () {
-    document.querySelectorAll("body", "button").forEach(el => {
-        if (el.classList.contains("darkMode")) {
-            el.classList.add("lightMode");
-            el.classList.remove("darkMode");
-        }
-        else {
-            el.classList.add("darkMode");
-            el.classList.remove("lightMode");
-        }
-    });
-});
+lockedInButton.addEventListener("click", lockedInClicked);
+lockedOutButton.addEventListener("click", lockedOutClicked);
+sleepingButton.addEventListener("click", sleepingClicked);
+eatingButton.addEventListener("click", eatingClicked);
 
